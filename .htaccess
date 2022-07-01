@@ -1,0 +1,19 @@
+ErrorDocument 404 https://alzhecorporation.fr/error.html
+ErrorDocument 403 https://alzhecorporation.fr/error.html
+ErrorDocument 502 https://alzhecorporation.fr/error.html
+ErrorDocument 500 https://alzhecorporation.fr/error.html
+
+RewriteEngine on
+
+RewriteCond %{THE_REQUEST} /([^.]+)\.html [NC]
+RewriteRule ^ /%1 [NC,L,R]
+RewriteCond %{REQUEST_FILENAME}.html -f
+RewriteRule ^ %{REQUEST_URI}.html [NC,L]
+RewriteCond %{THE_REQUEST} /([^.]+)\.xml [NC]
+RewriteRule ^ /%1 [NC,L,R]
+RewriteCond %{REQUEST_FILENAME}.xml -f
+RewriteRule ^ %{REQUEST_URI}.xml [NC,L]
+RewriteCond %{THE_REQUEST} /([^.]+)\.php [NC]
+RewriteRule ^ /%1 [NC,L,R]
+RewriteCond %{REQUEST_FILENAME}.php -f
+RewriteRule ^ %{REQUEST_URI}.php [NC,L]

@@ -1,0 +1,2 @@
+console.log("%cSi tu t'y connais, tu devrais me contacter pour développer mon site 😁.", "color: aqua; font-size: large");
+console.log("%cMon discord : https://alzhe.tv/discord", "color: red; font-size: large");
