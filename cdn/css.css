@@ -42,7 +42,6 @@ li a:hover, .dropdown:hover .dropbtn {
 
 li.dropdown {
   display: inline-block;
-  cursor: pointer;
 }
 
 .dropdown-content {
