@@ -266,6 +266,10 @@ th {
   cursor: not-allowed;
 }
 
+.loading {
+  cursor: wait;
+}
+
 .milieu {
   align-items: center;
   justify-content: center;
