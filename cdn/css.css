@@ -246,6 +246,14 @@ th {
   text-shadow: 3px 3px #000000;
 }
 
+.guilded {
+  color: #ffd321;
+}
+
+.guilded.shadow {
+  text-shadow: 3px 3px #000000;
+}
+
 .bold {
   font-weight: bold;
 }
